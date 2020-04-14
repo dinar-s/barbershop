@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Barbershop Borodinski</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slider/assets/owl.carousel.css">
+	<link rel="stylesheet" href="slider/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="bg-header">
+		<div class="container header-nav">
+			<header class="d-flex menu-main">
+				<nav class="main-navigation">
+					<a href="info.html">Информация</a>
+					<a href="news.html">Новости</a>
+					<a href="price-list.html">Прайс-лист</a>
+					<a href="shop.html">Магазин</a>
+				</nav>
+				<div class="login">
+					<a href="#" onmousedown="loginOpen()">Вход</a>
+				</div>
+			</header>
+		</div>
+	</div>
+	<div class="container main-info">
+		<div class="row justify-content-center">
+			<img class="logo" src="img/main-logo.png" alt="">
+		</div>
+		<div class="row">
+			<div class="privilege col-md-4 col-sm-4">
+				<p class="privilege__text">Быстро</p>
+				<img src="img/icon-1.png" alt="">
+				<p>Мы делаем своб работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+			</div>
+			<div class="privilege col-md-4 col-sm-4">
+				<p class="privilege__text">Круто</p>
+				<img src="img/icon-1.png" alt="">
+				<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+			</div>
+			<div class="privilege col-md-4 col-sm-4">
+				<p class="privilege__text">Дорого</p>
+				<img src="img/icon-1.png" alt="">
+				<p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+			</div>
+		</div>
+
+		<div class="row main-content-block justify-content-center">
+			<div class="main-content col-md-6">
+				<h2>Новости</h2>
+				<p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+				<p class="main-content__data">11 января</p>
+				<p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+				<p class="main-content__data">18 января</p>
+				<a href="news.html"><button class="hover-btn">ВСЕ НОВОСТИ</button></a>
+			</div>
+			<div class="main-content col-md-6">
+				<div class="main-content_wrap">
+					<h2>Фотогалерея</h2>
+					<div class="owl-carousel owl-loaded owl-theme">
+						<div class="owl-stage-outer">
+							<div class="owl-stage">
+								<div class="owl-item">
+									<img width="80%" src="img/photo-1.png" alt="">
+								</div>
+								<div class="owl-item">
+									<img width="80%" src="img/photo-2.png" alt="">
+								</div>
+								<div class="owl-item">
+									<img width="80%" src="img/photo-3.png" alt="">
+								</div>
+								<div class="owl-item">
+									<img width="80%" src="img/photo-4.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="owl-nav">
+							<button class="prev hover-btn">НАЗАД</button>
+							<button class="next hover-btn">ВПЕРЕД</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row main-content-block justify-content-center">
+			<div class="main-content main-content-btn col-md-6">
+				<h2>Контактная информация</h2>
+				<p>Барбершоп "Бородинский"<br>Адресс: г. Санкт-Петербург, Б. Конюшенная, д. 1<br>Телефон: <a href="tel:71231231232">+7 (495) 666-02-66</a></p>
+				<p>Время работы:<br>ПН-ПТ: С 10:00 до 22:00<br>СБ-ВС: с 10:00 до 19:00</p>
+				<button onmousedown="mapOpen()" class="hover-btn">КАК ПРОЕХАТЬ</button>
+				<button onmousedown="feedbackOpen()" class="hover-btn">ОБРАТНАЯ СВЯЗЬ</button>
+			</div>
+			<div class="main-content col-md-6">
+				<div class="main-content_wrap">
+					<h2>Записаться</h2>
+					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+					<div class="main-content__form d-flex">
+						<div class="main-content__form-inp col-md-6">
+							<p>Дата</p>
+							<input type="text" placeholder="08.10.2017" class="hover-input">
+						</div>
+						<div class="main-content__form-inp col-md-6">
+							<p>Время</p>
+							<input type="text" placeholder="10:00" class="hover-input">
+						</div>
+					</div>
+					<div class="main-content__form d-flex">
+						<div class="main-content__form-inp col-md-6">
+							<p>Ваше имя</p>
+						<input type="text" placeholder="Бородач" class="hover-input">
+						</div>
+						<div class="main-content__form-inp col-md-6">
+							<p>Телефон</p>
+						<input id="main-form" value="" type="text" placeholder="+7 123 123-11-22" class="hover-input">
+						</div>
+					</div>
+					<button class="col-md-12 hover-btn btn-form" onmousedown="formMessage()">ОТПРАВИТЬ</button>
+					<p id=formMessageFalse>Заполните все поля!</p>
+					<p id=formMessage>Вы успешно записались :)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container d-flex justify-content-between">
+			<div class="footer-info col-4">
+				<p>Барбершоп "Бородинский"</p>
+				<p>Адресс: г. Санкт-Петербург, Б. Конюшенная, д. 1</p>
+				<p><a href="#" style="text-decoration: underline;">Как нас найти?</a></p>
+				<p>Телефон: <a href="tel:71231231232">+7 (495) 666-02-66</a></p>
+			</div>
+			<div class="footer-social col-4">
+				<p>Давайте дружить!</p>
+				<div class="footer-social__btn">
+					<button class="hover-btn"><a href="https://vk.com/tommy0561"><img src="img/vk.png" alt=""></a></button>
+					<button class="hover-btn"><img src="img/facebook.png" alt=""></button>
+					<button class="hover-btn"><img src="img/instagram.png" alt=""></button>
+				</div>
+			</div>
+			<div class="footer-dev col-4">
+				<p>Разработано:</p>
+				<a href="https://vk.com/tommy0561" target="blank">
+					<button class="hover-btn">Dinar Safin</button>
+				</a>
+			</div>
+		</div>
+	</footer>
+	<!-- Карта -->
+	<div class="main-map container" id=main-map>
+		<div class="main-map__wrap">
+			<div onmousedown="mapClose()">
+				<span class="close1"></span>
+				<span class="close2"></span>
+			</div>
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A52f35ed92759d382c9b9aa1a0825c9f1d8407e477e57eef9d628277e2e54d9da&amp&width=100%&height=80vh&lang=ru_UA&sourceType=constructor"></script>
+		</div>
+	</div>
+	<!-- Обратная связь -->
+	<div class="container main-feedback" id="main-feedback">
+		<div class="main-feedback__wrap col-lg-4 col-md-4 col-xs-5 col-sm-5 col-6">
+			<div onmousedown="feedbackClose()">
+				<span class="close3"></span>
+				<span class="close4"></span>
+			</div>
+			<h2>Обратная связь</h2>
+			<p>Ваше имя:</p>
+			<input type="text" placeholder="Введите имя" id="form-name">
+			<p>Ваше E-mail адресс:</p>
+			<input type="text" placeholder="Введите E-mail" id="form-mail">
+			<p>Темя сообщения:</p>
+			<input type="text" placeholder="Введите имя">
+			<p>Сообщение</p>
+			<textarea cols="35" rows="5"></textarea><br>
+			<button onmousedown="feedbackMessage()" class="hover-btn">Отправить</button>
+			<p id="feedbackMessageError">Заполните все поля!</p>
+			<p id="feedbackMessage">Ваше сообщение отправлено :)</p>
+		</div>
+	</div>
+	<!-- Вход в личный кабинет -->
+	<div class="form-login-wrap" id="form-ligin">
+		<div class="form-login">
+			<div class="form-login__close" onmousedown="loginClose()" id="form-login__close">
+				<span class="close5"></span>
+				<span class="close6"></span>
+			</div>
+			<h2>Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<div class="form-login__inpLog">
+				<input type="text" placeholder="ЛОГИН" class="hover-input">
+			</div>
+			<div class="form-login__inpPass">
+				<input type="text" placeholder="ПАРОЛЬ" class="hover-input">
+			</div>
+			<div class="form-login__text">
+				<div class="form-login__text-checkbox">
+					<input type="checkbox" class="login-checkbox" id="checkLogin">
+					<label for="checkLogin" class="css-label">
+						<p>Запомните меня</p>
+					</label>	
+				</div>
+				<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+			</div>
+			<button onmousedown="formLogin()">ВОЙТИ</button>
+			<p id="formLogin">Просим прощения, но личный кабинет еще в разработке :)</p>
+		</div>
+	</div>
+	<!-- Меню для мобилки -->
+	<div id="burger-menu" onmousedown="openMobMenu()">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div class="mob-menu" id="mob-menu">
+		<div class="mob-menu-close" onmousedown="closeMobMenu()">
+			<span class="close-mob-menu1"></span>
+			<span class="close-mob-menu2"></span>
+		</div>
+		<nav class="mob-navigation">
+			<a href="info.html">Информация</a>
+			<a href="news.html">Новости</a>
+			<a href="price-list.html">Прайс-лист</a>
+			<a href="shop.html">Магазин</a>
+		</nav>
+		<div class="login">
+			<a href="#" onmousedown="loginOpen()">Вход в личный кабинет</a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="slider/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

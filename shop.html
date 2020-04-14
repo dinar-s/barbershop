@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Магазин</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slider/assets/owl.carousel.css">
+	<link rel="stylesheet" href="slider/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="page-bg">
+		<div class="bg-header">
+			<div class="container header-nav header-s-logo">
+				<header class="d-flex">
+					<nav class="main-navigation">
+						<a class="header-logo" href="index.html"><img src="img/header-logo.png" alt=""></a>
+						<a href="info.html">Информация</a>
+						<a href="news.html">Новости</a>
+						<a href="price-list.html">Прайс-лист</a>
+						<a href="shop.html" class="active-menu">Магазин</a>
+					</nav>
+					<div class="login">
+						<a href="#" onmousedown="loginOpen()">Вход</a>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<div class="container shop-main-container">
+			<div class="shop-content">
+
+				<!-- Хлебные крошки -->
+				<div class="shop-content__header">
+					<h1>Средства для ухода</h1>
+					<nav class="header-navigation">
+						<ol>
+							<li class="header-navigation__item ol-disabled"><a href="index.html">Главная</a></li>
+							<li class="header-navigation__item"><a href="shop.html">Магазин</a></li>
+							<li class="header-navigation__item active" aria-current="page">Средства для ухода</li>
+						</ol>
+					</nav>
+				</div>
+				
+				<button class="filter-mobile" onmousedown="openFiltr()">Открыть фильтр</button>
+				<div class="shop-content-main">
+					<!-- Фильтр -->
+					<div class="shop-content__filtr">
+						<h2>Производители:</h2>
+						<div class="shop-content__filtr-checkbox">
+							<input type="checkbox" class="filtr-checkbox" id="checkFiltr1" checked="checked">
+							<label for="checkFiltr1" class="css-label">
+								<p>Baxter of california</p>
+							</label>	
+						</div>
+						<div class="shop-content__filtr-checkbox">
+							<input type="checkbox" class="filtr-checkbox" id="checkFiltr2">
+							<label for="checkFiltr2" class="css-label">
+								<p>Mr natty</p>
+							</label>	
+						</div>
+						<div class="shop-content__filtr-checkbox">
+							<input type="checkbox" class="filtr-checkbox" id="checkFiltr3" checked="checked">
+							<label for="checkFiltr3" class="css-label">
+								<p>Suavecito</p>
+							</label>	
+						</div>
+						<div class="shop-content__filtr-checkbox">
+							<input type="checkbox" class="filtr-checkbox" id="checkFiltr4">
+							<label for="checkFiltr4" class="css-label">
+								<p>Malin+Goetz</p>
+							</label>	
+						</div>
+						<div class="shop-content__filtr-checkbox">
+							<input type="checkbox" class="filtr-checkbox" id="checkFiltr5">
+							<label for="checkFiltr5" class="css-label">
+								<p>Murray`s</p>
+							</label>	
+						</div>
+						<div class="shop-content__filtr-checkbox">
+							<input type="checkbox" class="filtr-checkbox" id="checkFiltr6" checked="checked">
+							<label for="checkFiltr6" class="css-label">
+								<p>American Crew</p>
+							</label>	
+						</div>
+
+						<h2>Группы товаров:</h2>
+						<div class="shop-content__filtr-radio">
+							<input type="radio" class="filtr-radio" id="radioFiltr1" name="radioFiltr">
+							<label for="radioFiltr1" class="css-radio">
+								<p>Бритвенные принадлежности</p>
+							</label>	
+						</div>
+						<div class="shop-content__filtr-radio">
+							<input type="radio" class="filtr-radio" id="radioFiltr2" name="radioFiltr" checked="checked">
+							<label for="radioFiltr2" class="css-radio">
+								<p>Средства для ухода</p>
+							</label>	
+						</div>
+						<div class="shop-content__filtr-radio">
+							<input type="radio" class="filtr-radio" id="radioFiltr3" name="radioFiltr">
+							<label for="radioFiltr3" class="css-radio">
+								<p>Аксессуары</p>
+							</label>	
+						</div>
+						<button class="hover-btn">ПОКАЗАТЬ</button>
+					</div>
+					<!-- ===============================================
+							Товары
+					=============================================== -->
+					<div class="shop-content__goods">
+						<div class="shop-content__goods-items">
+							<a href="shop-item-1.html">
+								<img src="img/goods-1.png" alt="">
+							</a>
+							<p>Набор для путешествий<br>«BAXTER OF CALIFORNIA»</p>
+							<div class="shop-content__goods-items-btn">
+								<button>2 900 ₽</button>
+								<button class="shop-buy-btn hover-btn">Купить</button>
+							</div>
+						</div>
+						<div class="shop-content__goods-items">
+							<img src="img/goods-2.png" alt="">
+							<p>Увлажняющий крем<br>«BAXTER OF CALIFORNIA»</p>
+							<div class="shop-content__goods-items-btn">
+								<button>750 ₽</button>
+								<button class="shop-buy-btn hover-btn">Купить</button>
+							</div>
+						</div>
+						<div class="shop-content__goods-items">
+							<img src="img/goods-3.png" alt="">
+							<p>Гель для волос<br>«SUAVECITO»</p>
+							<div class="shop-content__goods-items-btn">
+								<button>290 ₽</button>
+								<button class="shop-buy-btn hover-btn">Купить</button>
+							</div>
+						</div>
+						<div class="shop-content__goods-items">
+							<img src="img/goods-4.png" alt="">
+							<p>Глина для укладки волос<br>«AMERICAN CREW»</p>
+							<div class="shop-content__goods-items-btn">
+								<button>500 ₽</button>
+								<button class="shop-buy-btn hover-btn">Купить</button>
+							</div>
+						</div>
+						<div class="shop-content__goods-items">
+							<img src="img/goods-5.png" alt="">
+							<p>Гель для волос<br>«AMERICAN CREW»</p>
+							<div class="shop-content__goods-items-btn">
+								<button>300 ₽</button>
+								<button class="shop-buy-btn hover-btn">Купить</button>
+							</div>
+						</div>
+						<div class="shop-content__goods-items">
+							<img src="img/goods-6.png" alt="">
+							<p>Набор для бритья<br>«Baxter of California»</p>
+							<div class="shop-content__goods-items-btn">
+								<button>3 900 ₽</button>
+								<button class="shop-buy-btn hover-btn">Купить</button>
+							</div>
+						</div>
+						<div class="shop-paga-numbers">
+							<button class="active-btn-page">1</button>
+							<button>2</button>
+							<button>3</button>
+							<button>4</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer>
+		<div class="container d-flex justify-content-between">
+			<div class="footer-info col-4">
+				<p>Барбершоп "Бородинский"</p>
+				<p>Адресс: г. Санкт-Петербург, Б. Конюшенная, д. 1</p>
+				<p><a href="#" style="text-decoration: underline;">Как нас найти?</a></p>
+				<p>Телефон: <a href="tel:71231231232">+7 (495) 666-02-66</a></p>
+			</div>
+			<div class="footer-social col-4">
+				<p>Давайте дружить!</p>
+				<div class="footer-social__btn">
+					<button class="hover-btn"><a href="https://vk.com/tommy0561"><img src="img/vk.png" alt=""></a></button>
+					<button class="hover-btn"><img src="img/facebook.png" alt=""></button>
+					<button class="hover-btn"><img src="img/instagram.png" alt=""></button>
+				</div>
+			</div>
+			<div class="footer-dev col-4">
+				<p>Разработано:</p>
+				<a href="https://vk.com/tommy0561" target="blank">
+					<button class="hover-btn">Dinar Safin</button>
+				</a>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<!-- Вход в личный кабинет -->
+	<div class="form-login-wrap" id="form-ligin">
+		<div class="form-login">
+			<div class="form-login__close" onmousedown="loginClose()" id="form-login__close">
+				<span class="close5"></span>
+				<span class="close6"></span>
+			</div>
+			<h2>Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<div class="form-login__inpLog">
+				<input type="text" placeholder="ЛОГИН" class="hover-input">
+			</div>
+			<div class="form-login__inpPass">
+				<input type="text" placeholder="ПАРОЛЬ" class="hover-input">
+			</div>
+			<div class="form-login__text">
+				<div class="form-login__text-checkbox">
+					<input type="checkbox" class="login-checkbox" id="checkLogin">
+					<label for="checkLogin" class="css-label">
+						<p>Запомните меня</p>
+					</label>	
+				</div>
+				<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+			</div>
+			<button>ВОЙТИ</button>
+		</div>
+	</div>
+	<!-- Фильтр -->
+	<div class="shop-content__filtr filter-mobile-block" id="shop-filtr" id="test" >
+		<button class="filter-mobile-close" onmousedown="closeFiltr()">Закрыть фильтр</button>
+		<h2>Производители:</h2>
+		<div class="shop-content__filtr-checkbox">
+			<input type="checkbox" class="filtr-checkbox" id="checkFiltr1" checked="checked">
+			<label for="checkFiltr1" class="css-label">
+				<p>Baxter of california</p>
+			</label>	
+		</div>
+		<div class="shop-content__filtr-checkbox">
+			<input type="checkbox" class="filtr-checkbox" id="checkFiltr2">
+			<label for="checkFiltr2" class="css-label">
+				<p>Mr natty</p>
+			</label>	
+		</div>
+		<div class="shop-content__filtr-checkbox">
+			<input type="checkbox" class="filtr-checkbox" id="checkFiltr3" checked="checked">
+			<label for="checkFiltr3" class="css-label">
+				<p>Suavecito</p>
+			</label>	
+		</div>
+		<div class="shop-content__filtr-checkbox">
+			<input type="checkbox" class="filtr-checkbox" id="checkFiltr4">
+			<label for="checkFiltr4" class="css-label">
+				<p>Malin+Goetz</p>
+			</label>	
+		</div>
+		<div class="shop-content__filtr-checkbox">
+			<input type="checkbox" class="filtr-checkbox" id="checkFiltr5">
+			<label for="checkFiltr5" class="css-label">
+				<p>Murray`s</p>
+			</label>	
+		</div>
+		<div class="shop-content__filtr-checkbox">
+			<input type="checkbox" class="filtr-checkbox" id="checkFiltr6" checked="checked">
+			<label for="checkFiltr6" class="css-label">
+				<p>American Crew</p>
+			</label>	
+		</div>
+
+		<h2 style="font-size: 23px;">Группы товаров:</h2>
+		<div class="shop-content__filtr-radio">
+			<input type="radio" class="filtr-radio" id="radioFiltr1" name="radioFiltr">
+			<label for="radioFiltr1" class="css-radio">
+				<p>Бритвенные принадлежности</p>
+			</label>	
+		</div>
+		<div class="shop-content__filtr-radio">
+			<input type="radio" class="filtr-radio" id="radioFiltr2" name="radioFiltr" checked="checked">
+			<label for="radioFiltr2" class="css-radio">
+				<p>Средства для ухода</p>
+			</label>	
+		</div>
+		<div class="shop-content__filtr-radio">
+			<input type="radio" class="filtr-radio" id="radioFiltr3" name="radioFiltr">
+			<label for="radioFiltr3" class="css-radio">
+				<p>Аксессуары</p>
+			</label>	
+		</div>
+		<button class="hover-btn filter-end-btn">ПОКАЗАТЬ</button>
+	</div>
+	<!-- Меню для мобилки -->
+	<div id="burger-menu" onmousedown="openMobMenu()">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div class="mob-menu" id="mob-menu">
+		<div class="mob-menu-close" onmousedown="closeMobMenu()">
+			<span class="close-mob-menu1"></span>
+			<span class="close-mob-menu2"></span>
+		</div>
+		<nav class="mob-navigation">
+			<a href="index.html">Главная</a>
+			<a href="info.html">Информация</a>
+			<a href="news.html">Новости</a>
+			<a href="price-list.html">Прайс-лист</a>
+			<a href="shop.html">Магазин</a>
+		</nav>
+		<div class="login">
+			<a href="#" onmousedown="loginOpen()">Вход в личный кабинет</a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="slider/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

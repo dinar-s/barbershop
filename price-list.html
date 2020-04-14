@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Прайс-лист</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="slider/assets/owl.carousel.css">
+	<link rel="stylesheet" href="slider/assets/owl.theme.default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<div class="page-bg">
+		<div class="bg-header">
+			<div class="container header-nav header-s-logo">
+				<header class="d-flex">
+					<nav class="main-navigation">
+						<a class="header-logo" href="index.html"><img src="img/header-logo.png" alt=""></a>
+						<a href="info.html">Информация</a>
+						<a href="news.html">Новости</a>
+						<a href="price-list.html" class="active-menu">Прайс-лист</a>
+						<a href="shop.html">Магазин</a>
+					</nav>
+					<div class="login">
+						<a href="#" onmousedown="loginOpen()">Вход</a>
+					</div>
+				</header>
+			</div>
+		</div>
+
+		<div class="container shop-main-container">
+			<div class="shop-content">
+				<!-- Хлебные крошки -->
+				<div class="shop-content__header">
+					<h1>Прайс-лист</h1>
+					<nav class="header-navigation">
+						<ol>
+							<li class="header-navigation__item ol-disabled"><a href="index.html">Главная</a></li>
+							<li class="header-navigation__item active" aria-current="page">Прайс-лист</li>
+						</ol>
+					</nav>
+				</div>
+				<div class="price-list__title_wrap">
+					<p class="price-list__title">Истинно мужская классика</p>
+				</div>
+				<div class="price-list-adaptiv d-flex price-list justify-content-between">
+					<div class="price-list__qualities col-6">
+						<h2>Мы используем только<br>лучшие качества:</h2>
+						<ul>
+							<li><div>Baxter of California</div></li>
+							<li><div>MR Natty</div></li>
+							<li><div>Suavecito</div></li>
+							<li><div>Malin+Goetz</div></li>
+						</ul>
+					</div>
+					<div class="price-list__price col-6">
+						<h2>Цены на услуги<br>наших мастеров:</h2>
+						<table>
+							<tbody>
+								<tr>
+									<td>Стрижка</td>
+									<td>1500 ₽</td>
+								</tr>
+								<tr>
+									<td>Стрижка бороды</td>
+									<td>500 ₽</td>
+								</tr>
+								<tr>
+									<td>Накрутка усов</td>
+									<td>350 ₽</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h2 class="price-list__title2">Несколько слов о нас:</h2>
+				<div class="d-flex price-list-adaptiv price-list justify-content-between">
+					<div class="price-list__text-left col-6">
+						<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+					</div>
+					<div class="price-list__text-right col-6">
+						<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<footer>
+		<div class="container d-flex justify-content-between">
+			<div class="footer-info col-4">
+				<p>Барбершоп "Бородинский"</p>
+				<p>Адресс: г. Санкт-Петербург, Б. Конюшенная, д. 1</p>
+				<p><a href="#" style="text-decoration: underline;">Как нас найти?</a></p>
+				<p>Телефон: <a href="tel:71231231232">+7 (495) 666-02-66</a></p>
+			</div>
+			<div class="footer-social col-4">
+				<p>Давайте дружить!</p>
+				<div class="footer-social__btn">
+					<button class="hover-btn"><a href="https://vk.com/tommy0561"><img src="img/vk.png" alt=""></a></button>
+					<button class="hover-btn"><img src="img/facebook.png" alt=""></button>
+					<button class="hover-btn"><img src="img/instagram.png" alt=""></button>
+				</div>
+			</div>
+			<div class="footer-dev col-4">
+				<p>Разработано:</p>
+				<a href="https://vk.com/tommy0561" target="blank">
+					<button class="hover-btn">Dinar Safin</button>
+				</a>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<!-- Вход в личный кабинет -->
+	<div class="form-login-wrap" id="form-ligin">
+		<div class="form-login">
+			<div class="form-login__close" onmousedown="loginClose()" id="form-login__close">
+				<span class="close5"></span>
+				<span class="close6"></span>
+			</div>
+			<h2>Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<div class="form-login__inpLog">
+				<input type="text" placeholder="ЛОГИН" class="hover-input">
+			</div>
+			<div class="form-login__inpPass">
+				<input type="text" placeholder="ПАРОЛЬ" class="hover-input">
+			</div>
+			<div class="form-login__text">
+				<div class="form-login__text-checkbox">
+					<input type="checkbox" class="login-checkbox" id="checkLogin">
+					<label for="checkLogin" class="css-label">
+						<p>Запомните меня</p>
+					</label>	
+				</div>
+				<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+			</div>
+			<button>ВОЙТИ</button>
+		</div>
+	</div>
+	<!-- Меню для мобилки -->
+	<div id="burger-menu" onmousedown="openMobMenu()">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<div class="mob-menu" id="mob-menu">
+		<div class="mob-menu-close" onmousedown="closeMobMenu()">
+			<span class="close-mob-menu1"></span>
+			<span class="close-mob-menu2"></span>
+		</div>
+		<nav class="mob-navigation">
+			<a href="index.html">Главная</a>
+			<a href="info.html">Информация</a>
+			<a href="news.html">Новости</a>
+			<a href="price-list.html">Прайс-лист</a>
+			<a href="shop.html">Магазин</a>
+		</nav>
+		<div class="login">
+			<a href="#" onmousedown="loginOpen()">Вход в личный кабинет</a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="slider/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
